@@ -9,6 +9,7 @@ class TripController extends Controller
 {
     public function index(){
         $viaggi = Trip::all();
+        @dump($viaggi);
         return view('home', compact('viaggi'));
     }
     public function show($id){
